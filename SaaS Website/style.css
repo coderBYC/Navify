@@ -1,0 +1,217 @@
+/* 通用設定與重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* 導覽列 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navify-logo{
+  width:100px;
+  border-radius: 50px;
+
+}
+
+
+.navbar-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: border 1s;
+  transition: font-size 0.5s;
+
+}
+
+.navbar-links a:hover{
+  border:solid rgb(230, 0, 255) 5px;
+  font-size:2rem;
+  border-radius: 5px;
+  transition: border 0.5s;
+
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn,
+.signup-btn {
+  background: none;
+  border: solid black 2px;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition:color 1s;
+
+
+}
+
+.login-btn:hover{
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 4px;
+}
+
+.signup-btn:hover{
+  font-size: 2rem;
+  color:#333;
+  background-color: rgb(2, 189, 2);
+}
+
+.signup-btn {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Hero 區域 */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.email-form {
+  display: flex;
+  margin-bottom: 1rem;
+  height:100px;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 5px solid black;
+  border-radius: 20px;
+  font-size: 28px;
+  font-family: Arial, Times, serif;
+  outline: none;
+  margin-right:5px;
+}
+
+.email-form .cta-btn {
+  margin-left:5px;
+  border: none;
+  background-color: #de0a23;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.trial-info {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* 特色/資源 區域 */
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 頁尾 */
+.footer {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 0.5rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.footer p {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.8rem;
+}
